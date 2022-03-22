@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap");
+/* dark */
+/* light */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #999999;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.main-container {
+  width: 70%;
+  padding: 4.56em;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #222222;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info {
+  position: relative;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info .logo img {
+  width: 9em;
+}
+
+.info .self-info h1 {
+  color: #fba867;
+  font-size: 1.36rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.info .self-info .account-details {
+  color: #999999;
+  line-height: 1.18em;
+  margin-top: 2.18em;
+}
+
+.info .self-info .account-details h3 {
+  font-size: 1.13rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.info .self-info .account-details p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.quotation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quotation .client-info {
+  padding: 2.18em;
+}
+
+.quotation .client-info .head {
+  margin-bottom: 6.25em;
+}
+
+.quotation .client-info .head h1 {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.quotation .client-info .head p {
+  padding-top: 1.01em;
+  color: #999999;
+}
+
+.quotation .client-info .head p span {
+  font-weight: 300;
+}
+
+.quotation .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+.quotation .address .from-to {
+  line-height: 1.58em;
+  width: 50%;
+}
+
+.quotation .address .from-to h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 0.9em;
+}
+
+.quotation .address .from-to p {
+  font-weight: 300;
+}
+
+.quotation .address .from-to p h3 {
+  font-weight: 500;
+}
+
+.quotation table {
+  width: 100%;
+  color: #ffffff;
+  border: 2px solid #4d4d4d;
+  border-radius: 1em;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.quotation th,
+.quotation td {
+  padding: 0.5em 1em;
+}
+
+.quotation th:nth-child(2),
+.quotation td:nth-child(2) {
+  border-left: 2px solid #4d4d4d;
+}
+
+.quotation th:nth-child(1),
+.quotation td:nth-child(1) {
+  text-align: left;
+}
+
+.quotation tr {
+  border: 2px solid #4d4d4d;
+}
+
+.quotation th {
+  font-size: 1.36rem;
+}
+
+.quotation tr td {
+  font-size: 1.13rem;
+  font-weight: 300;
+}
+
+.quotation tr td h4,
+.quotation tr td h5 {
+  font-weight: 500;
+}
+
+.calculations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 5em;
+  color: #ffffff;
+  border: 1.5px solid #4d4d4d;
+  background-color: #282828;
+  width: 70%;
+  margin-left: 30%;
+}
+
+.calculations .calculation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculations .calculation-wrapper .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
