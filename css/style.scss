@@ -5,7 +5,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: $secondary-terx-dark;
+  background-color: $secondary-text-dark;
   font-family: "Roboto", sans-serif;
 }
 h1,
@@ -22,12 +22,14 @@ p {
 }
 
 .main-container {
+  position: relative;
   width: 70%;
   padding: 4.56em;
   margin: 0 auto;
-  height: 100%;
+  height: auto;
   background-color: $bg-dark;
 }
+
 .wrapper {
   display: flex;
 }
@@ -48,13 +50,13 @@ p {
 
   .self-info {
     h1 {
-      color: $mainn-color;
+      color: $main-color;
       font-size: 1.36rem;
       text-transform: uppercase;
       font-weight: 500;
     }
     .account-details {
-      color: $secondary-terx-dark;
+      color: $secondary-text-dark;
       line-height: 1.18em;
       margin-top: 2.18em;
       h3 {
@@ -65,6 +67,7 @@ p {
       p {
         margin: 0;
         font-weight: 300;
+        word-wrap: break-word;
       }
     }
   }
@@ -86,7 +89,7 @@ p {
       }
       p {
         padding-top: 1.01em;
-        color: $secondary-terx-dark;
+        color: $secondary-text-dark;
         span {
           font-weight: 300;
         }
@@ -100,18 +103,18 @@ p {
     color: $primary-text-dark;
     .from-to {
       line-height: 1.58em;
-
       width: 50%;
       h2 {
         font-size: 1.7rem;
         font-weight: 500;
         margin-bottom: 0.9em;
       }
+      h3 {
+        font-weight: 500;
+      }
       p {
+        word-break: break-all;
         font-weight: 300;
-        h3 {
-          font-weight: 500;
-        }
       }
     }
   }
@@ -160,21 +163,79 @@ p {
 }
 
 .calculations {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 5em;
+  position: relative;
   color: $primary-text-dark;
-  border: 1.5px solid $table-color;
-  background-color: $secondary-bg-dark;
-  width: 70%;
-  margin-left: 30%;
-  .calculation-wrapper {
-    display: flex;
-    flex-direction: column;
 
+  #with-color {
+    border: 1.5px solid $table-color;
+    border-radius: 1em;
+    background-color: $secondary-bg-dark;
+  }
+
+  .calculation-wrapper {
+    position: relative;
+    display: flex;
+    margin: 3em 0 0 auto;
+    flex-direction: row-reverse;
+    width: 70%;
+  }
+
+  .total-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: inherit;
     .total {
+      width: 90%;
       display: flex;
-      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        line-height: 1.3em;
+        padding: 2em;
+        font-size: 1.13rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  button {
+    font-weight: 700;
+    color: $main-color;
+    border: 3px solid $main-color;
+    padding: 1em 2em;
+    margin: 0 3em;
+    background: none;
+    border-radius: 2em;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  width: 70%;
+  padding: 4.56em;
+  margin: 0 auto;
+  height: auto;
+
+  background-color: $secondary-bg-dark;
+  border-top: 1px solid $table-color;
+  color: $primary-text-dark;
+  line-height: 3em;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  p {
+    color: $secondary-text-dark;
+    font-weight: 300;
+    font-size: 1.13rem;
+    span {
+      font-weight: 500;
     }
   }
 }
